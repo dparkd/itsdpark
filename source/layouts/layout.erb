@@ -1,7 +1,3 @@
----
-layout: external
----
-
 <!doctype html>
 <html>
   <head>
@@ -14,11 +10,19 @@ layout: external
     <title><%= current_page.data.title || "The Middleman" %></title>
 
     <%= stylesheet_link_tag "base", "skeleton" %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %>" >
+
+    <%= partial "partials/navigation" %>
     <%= yield %>
 
+    <!-- <% link_to('/product') do %>Source Code<% end %> -->
+
+    <%= partial "partials/footer" %>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
     <%= javascript_include_tag  "all" %>
   </body>
