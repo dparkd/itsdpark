@@ -1,0 +1,148 @@
+$primary: #1AD6FD;
+$secondary: #1D62F0;
+$text-primary: #505361;
+$text-secondary: #A9ACB2;
+
+$break-small: 480px;
+
+@mixin animation($time) {
+  -webkit-transition: $time all ease-in-out;
+  -moz-transition: $time all ease-in-out;
+  transition: $time all ease-in-out; 
+}
+
+@mixin box-shadow($px, $color) {
+  -webkit-box-shadow: $px $color;
+  -moz-box-shadow: $px $color;
+  box-shadow: $px $color;
+}
+
+.posters {
+  text-rendering: GeometricPrecision;
+  font-family: 'Circular', sans-serif;
+  background: #E8ECF3;
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  
+
+  // start .posters -> .intro
+  .intro {
+    padding-top: 150px;
+    background: #272A36;
+    padding-bottom: 100px;
+
+    h1 {
+      color: white;
+      font-size: 5.5rem;
+      font-family: 'CircularMedium', sans-serif;
+      letter-spacing: 0.5px;
+    }
+
+    h4 {
+      font-size: 2.5rem;
+      color: white;
+      letter-spacing: 0.5px;
+      padding-bottom: 50px;
+    }
+
+    @media screen and (max-width: $break-small) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      h1 {
+        font-size: 3.2rem;
+      }
+      h4 {
+        font-size: 2rem;
+        padding-bottom: 0;
+      }
+    }
+  }
+  // end .posters -> .intro
+
+  // start .posters -> .project
+  .project {
+    padding-bottom: 100px;
+
+    h1 {
+      color: $text-primary;
+      font-size: 4rem;
+      font-family: 'CircularMedium', sans-serif;
+      letter-spacing: 0.5px;
+      opacity: 0.8;
+      padding-bottom: 20px;
+      padding-top: 100px;
+    }
+
+    p {
+      color: $text-primary;
+      font-family: 'CenturySchoolbook', serif;
+      width: 40%;
+      font-size: 1.7rem;
+      margin: 0 auto;
+      text-align: justify;
+    }
+
+
+    @media screen and (max-width: $break-small) { 
+      h1 {
+        font-size: 3.2rem;
+        padding-top: 50px;
+      }
+
+      p {
+        width: 90%; 
+      }
+    }
+  }
+
+  .images {
+    width: 80%; 
+    margin: 0 auto;
+    img {
+      width: 30%; 
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: $break-small) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  // end .posters -> .project
+  
+
+
+
+} // end .posters 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
