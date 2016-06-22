@@ -17,7 +17,7 @@ $break-small: 480px;
   box-shadow: $px $color;
 }
 
-.index {
+.product {
   background: linear-gradient(#fff, #E8ECF3);
   text-rendering: GeometricPrecision;
   font-family: 'Circular', sans-serif;
@@ -119,6 +119,12 @@ $break-small: 480px;
 
     @include box-shadow(0px 7px 24px -5px, #333);
     @include animation(0.20s);
+
+    @media screen and (max-width: $break-small) { 
+      width: 300px;
+      margin: 0 0 0 -150px;
+
+    }
 
     .row {
       padding-top: 30px; 
