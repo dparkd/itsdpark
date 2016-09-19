@@ -5,6 +5,7 @@
 @import "ctree";
 @import "posters";
 @import "new"; 
+@import "peer";
 
 .text-center {
   text-align: center;
@@ -21,9 +22,33 @@
   text-align: left;
 }
 
+.image_full {
+  img {
+    width: 100%;
+  }
+}
+
 body {
   
 }
+
+.nav {
+  position: fixed; 
+  top: 10px; 
+  left: 10px;
+  z-index: 99;
+  font-family: Circular;
+  font-size: 1em;
+
+  a {
+    color: #333;
+    text-decoration: none;
+    &:hover {
+      color: #333; 
+    }
+  }
+}
+
 
 
 @font-face {
@@ -50,4 +75,9 @@ body {
 @font-face {
   font-family: AtlasMedium;
   src: url(../fonts/AtlasGrotesk-Medium-Web.woff);
+}
+
+@font-face {
+  font-family: SFRegular;
+  src: url(../fonts/SF-UI-Text-Regular.otf);
 }

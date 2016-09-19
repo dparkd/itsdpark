@@ -106,8 +106,9 @@ $break-small: 480px;
     margin: 0 auto;
     img {
       width: 30%; 
-      display: inline-block;
+      display: block;
       margin: 0 auto;
+      margin-bottom: 50px;
     }
 
     @media screen and (max-width: $break-small) {

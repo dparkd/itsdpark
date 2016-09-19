@@ -9,5 +9,37 @@ $(window).ready(function() {
   $('#shaker').click(function() {
     $('.layer').addClass('hide');
     $('.cs-modal').addClass('cs-hide');
-  })
-})
+  });
+
+  $('.fluidbox-img').fluidbox({
+  	immediateOpen: true
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
