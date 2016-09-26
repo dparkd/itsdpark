@@ -20,6 +20,7 @@ $break-small: 480px;
 .ctree {
   text-rendering: GeometricPrecision;
   font-family: 'Circular', sans-serif;
+  text-align: center;
 
   .container {
     margin: 0 auto;
@@ -120,7 +121,12 @@ $break-small: 480px;
   }
   // end .ctree -> .project
   
-
+  .fluidbox-img img {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%; 
+    margin-bottom: 50px;
+  }
 
 
 } // end .ctree 
