@@ -22,7 +22,7 @@ $break-small: 480px;
   .header {
     width: 100%; 
     padding: 75px;
-    padding-bottom: 0;
+    padding-bottom: 30px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;   
@@ -31,23 +31,27 @@ $break-small: 480px;
       padding: 0;
     }
 
-    .eight {
+    .intro-img {
       line-height: 0;
       img {
         width: 100%; 
       }
     }
 
-    .four {
+    .about-me {
       @media screen and (max-width: $break-small) {
         padding: 20px;
       }
       h1 {
-        font-family: "CircularLight", sans-serif;
+        font-family: "CircularMedium", sans-serif;
         letter-spacing: 0.5px;
-        font-size: 1.4em;
+        font-size: 3em;
         opacity: 0.8;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+
+        @media screen and (max-width: $break-small) {
+          font-size: 1.8em;
+        }
       }
 
       hr {
@@ -58,16 +62,20 @@ $break-small: 480px;
       }
 
       p {
-        font-family: "AtlasLight", sans-serif; 
-        color: #777;
-        font-size: 1.1em;
-        letter-spacing: 0.4px;
-        line-height: 1.6em;
+        font-family: "Circular", sans-serif; 
+        color: #666;
+        font-size: 1.4em;
+        letter-spacing: 0.2px;
+        line-height: 1.8em;
+        @media screen and (max-width: $break-small) {
+          font-size: 1em;
+        }
       }
 
       a {
-        color: #777; 
-        opacity: 0.8;
+        font-family: "CircularMedium", sans-serif;
+        text-decoration: none;
+        color: #1D5AFF; 
       }
     }
   }
