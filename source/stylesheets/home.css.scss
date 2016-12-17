@@ -5,6 +5,7 @@ $text-secondary: #A9ACB2;
 
 $break-small: 480px;
 
+
 @mixin animation($time) {
   -webkit-transition: $time all cubic-bezier(0.75, 0.25, 0.25, 0.75);
   -moz-transition: $time all cubic-bezier(0.75, 0.25, 0.25, 0.75);
@@ -62,11 +63,13 @@ $break-small: 480px;
       }
 
       p {
-        font-family: "Circular", sans-serif; 
-        color: #666;
-        font-size: 1.4em;
+        font-family: "AtlasLight", sans-serif; 
+        color: #333;
+        font-size: 2.4em;
         letter-spacing: 0.2px;
         line-height: 1.8em;
+        padding-top: 250px;
+        padding-bottom: 250px;
         @media screen and (max-width: $break-small) {
           font-size: 1em;
         }
@@ -130,6 +133,7 @@ $break-small: 480px;
       .image {
         img {
           width: 100%; 
+          @include animation(0.3s);
         }
       }
 
