@@ -1,11 +1,13 @@
 @import "normalize";
-@import "home";
+
 @import "product";
 @import "minimal";
 @import "ctree";
 @import "posters";
 @import "new"; 
+@import "home";
 @import "peer";
+@import "reshape";
 
 .text-center {
   text-align: center;
@@ -54,6 +56,12 @@ body {
 @font-face {
   font-family: Circular;
   src: url(../fonts/CircularStd-Book.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: lunch;
+  src: url(../fonts/type.ttf);
   font-weight: 300;
 }
 
