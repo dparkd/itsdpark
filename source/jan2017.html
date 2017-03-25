@@ -1,0 +1,78 @@
+---
+title: Daniel Park - Designer
+---
+
+<div class="name">
+  <a href="/images/resume-dpark.pdf" class="project-name" data-img="dp" target="_blank">Daniel Park is a Product Designer and will be joining Facebook in the Summer of 2017 as an intern</a>
+</div>
+<!-- <span class="description"><p class="project-name" data-img="resume">Curriculum Vitae</p></span> -->
+
+<div class="work">
+  
+  <div class="project left-big">
+    <span class="project-type">Concept Project</span>
+    <h1><a href="/reshape" class="project-name" data-img="reframe">Reshape - This Also</a></h1>
+  </div>
+
+  <div class="project left-small">
+    <span class="project-type">Vision Project</span>
+    <h1><a href="/peer" class="project-name" data-img="peer">Peer - Moment Design</a></h1>
+  </div>
+
+  <div class="project">
+    <span class="project-type">Poster Design</span>
+    <h1><a href="http://nocounterplay.com" target="_blank" class="project-name" data-img="ncp">No Counter Play</a></h1>
+  </div>
+
+  <div class="project left-bigger">
+    <span class="project-type">Side Project</span>
+    <h1><a href="http://wall-canvas.herokuapp.com/" target="_blank" class="project-name" data-img="vrwall">VR Canvas Wall</a></h1>
+  </div>
+
+  <div class="project left-small">
+    <span class="project-type">Side Project</span>
+    <h1><a href="http://pixdraw.co" target="_blank" class="project-name" data-img="pixdraw">Pix Draw</a></h1>
+  </div>
+
+  <div class="project left-big">
+    <span class="project-type">Side Hustle</span>
+    <h1><a href="http://yashallo.com" target="_blank" class="project-name" data-img="yashallo">Yas Hallo</a></h1>
+  </div>
+
+  <div class="project">
+    <span class="project-type">Parsons Thesis - Beginning stages</span>
+    <h1><a href="https://medium.com/@itsdpark/parsons-thesis-an-introduction-ba3e5e48c478#.2m3unl3os" target="_blank" class="project-name" data-img="plsdistractme">Plsdistract.me</a></h1>
+  </div>
+
+</div>
+
+<%= image_tag "work/reframe.jpg", :id => "img-reframe", :class => "prj-image" %>
+<%= image_tag "work/peer2.jpg", :id => "img-peer", :class => "prj-image" %>
+<%= image_tag "work/ncp.jpg", :id => "img-ncp", :class => "prj-image" %>
+<%= image_tag "work/vrwall2.jpg", :id => "img-vrwall", :class => "prj-image" %>
+<%= image_tag "work/pixdraw2.jpg", :id => "img-pixdraw", :class => "prj-image" %>
+<%= image_tag "work/yashallo.jpg", :id => "img-yashallo", :class => "prj-image" %>
+<%= image_tag "work/distractme.jpg", :id => "img-plsdistractme", :class => "prj-image" %>
+<%= image_tag "dp.jpg", :id => "img-dp", :class => "prj-image" %>
+<!-- <%= image_tag "face.png", :id => "img-resume", :class => "prj-image" %> -->
+
+
+<script>
+  var projects = document.getElementsByClassName('project-name'); 
+
+  for (var i = 0; i < projects.length; i++) {
+    projects[i].addEventListener('mouseenter', function(e) {
+      var imageHover = document.getElementById("img-" + this.getAttribute('data-img'));
+      imageHover.style.display = "block";
+    })
+    projects[i].addEventListener('mousemove', function(e) {
+      var imageHover = document.getElementById("img-" + this.getAttribute('data-img'));
+      imageHover.style.left = e.screenX + 10 + "px"; 
+      imageHover.style.top = e.screenY - 70 + "px";
+    })
+    projects[i].addEventListener('mouseleave', function(e) {
+      var imageHover = document.getElementById("img-" + this.getAttribute('data-img'));
+      imageHover.style.display = "none";
+    })
+  }
+</script>
