@@ -12,6 +12,8 @@ $break-small: 480px;
 }
 
 .projects {
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
   width: 90%; 
   margin: 0 auto; 
   margin-top: 10vh;

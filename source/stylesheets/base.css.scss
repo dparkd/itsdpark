@@ -35,12 +35,14 @@ body {
 }
 
 .nav {
-  position: fixed; 
-  top: 10px; 
-  left: 10px;
+  width: 200px;
+  position: relative; 
+  top: 30px; 
+  left: 30px;
   z-index: 99;
-  font-family: Circular;
+  font-family: "LunchType", sans-serif;
   font-size: 1em;
+  letter-spacing: 1px;
 
   a {
     color: #333;
@@ -93,4 +95,14 @@ body {
 @font-face {
   font-family: LunchType;
   src: url(../fonts/Lunchtype_22-Regular.ttf);
+}
+
+@font-face {
+  font-family: Maison;
+  src: url(../fonts/MaisonNeueWEB-Light.woff);
+}
+
+@font-face {
+  font-family: MaisonBold;
+  src: url(../fonts/MaisonNeueWEB-Bold.woff);
 }
