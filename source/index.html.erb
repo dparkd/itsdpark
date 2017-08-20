@@ -2,43 +2,75 @@
 title: Daniel Park - Designer
 ---
 
-<div class="projects">
-  <h1 class="intro">
-    Hey, my name is Daniel Park. <span class="gray">I am currently at Facebook.</span>
-  </h1> <br><br><br><br>
+
+<h1 class="namee">
+  Daniel Park
+</h1>
+
+<div class="test">
+  
+  <div class="row buttons">
+    <a href="/reshape" id="front">Reshape</a>
+    <a href="/peer" id="left">Peer</a>
+    <a href="http://pixdraw.co" target="_blank" id="right">Pixdraw</a>
+    <a href="http://nocounterplay.com" target="_blank" id="top">No counter play</a>
+    <a href="http://wall-canvas.herokuapp.com/" target="_blank" id="bottom">VR Wall Paint</a>
+    <a href="https://soundcloud.com/bibimbeats/tracks" target="_blank" id="back">lo-fi beats</a>
+  </div>
 
 
-  <h1 class="project-name"><a href="/reshape" data-img="reframe"><span class="number">01</span>Reshape - This Also</a></h1>
-
-  <h1 class="project-name"><a href="/peer" data-img="peer"><span class="number">02</span>Peer - Moment Design</a></h1>
-
-  <h1 class="project-name"><a href="http://nocounterplay.com" target="_blank" data-img="ncp"><span class="number">03</span>No Counter Play</a></h1>
-
-  <h1 class="project-name"><a href="http://wall-canvas.herokuapp.com/" target="_blank" data-img="vrwall"><span class="number">04</span>VR Canvas Wall</a></h1>
-
-  <h1 class="project-name"><a href="http://pixdraw.co" target="_blank" data-img="pixdraw"><span class="number">05</span>PixDraw</a></h1>
-
-  <h1 class="project-name"><a href="http://yashallo.com" target="_blank" data-img="yashallo"><span class="number">06</span>Yas Hallo</a></h1>
-
-  <h1 class="project-name"><a href="/images/resume-dpark.pdf" target="_blank"><span class="number">07</span>Resume</a></h1>
-
-  <br>
-
-  <p class="links"><a href="https://github.com/dparkd" target="_blank">github</a> - <a href="http://www.linkedin.com/in/daniel-park-3158a979
-" target="_blank">linkedin</a> - <a href="mailto:parkd382@newschool.edu?Subject=Hello">email</a></p>
-
-  <!-- <a class="black-bg">I like black</a> -->
-
+<div class="space3d">
+    <div class="_3dbox">
+      <div class="_3dface _3dface--front"></div>
+      <div class="_3dface _3dface--top"></div>
+      <div class="_3dface _3dface--bottom"></div>
+      <div class="_3dface _3dface--left"></div>
+      <div class="_3dface _3dface--right"></div>
+      <div class="_3dface _3dface--back"></div>
+    </div>
 </div>
+
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
   
   $('body').ready(function() {
-    $('.black-bg').on('click', function() {
-      $('body').addClass('darkness');
-      $(this).removeClass('black-bg'); 
-      $(this).addClass('blue-bg')
-      $(this).remove();
-    })
+    $('#front').hover(function() {
+      $('.space3d ._3dbox').css({
+        transform: 'rotateY(15deg)'
+      });
+    });
+
+    $('#left').hover(function() {
+      $('.space3d ._3dbox').css({
+        transform: 'rotateY(70deg)'
+      });
+    });
+
+    $('#right').hover(function() {
+      $('.space3d ._3dbox').css({
+        transform: 'rotateY(-75deg)'
+      });
+    });
+
+    $('#top').hover(function() {
+      $('.space3d ._3dbox').css({
+        transform: 'rotateX(-75deg)'
+      });
+    });
+
+    $('#bottom').hover(function() {
+      $('.space3d ._3dbox').css({
+        transform: 'rotateX(75deg)'
+      });
+    });
+
+    $('#back').hover(function() {
+      $('.space3d ._3dbox').css({
+        transform: 'rotateY(175deg)'
+      });
+    });
   })
 </script>
+
+

@@ -8,6 +8,7 @@
 @import "home";
 @import "peer";
 @import "reshape";
+@import "plsdistractme";
 
 .text-center {
   text-align: center;
@@ -105,4 +106,14 @@ body {
 @font-face {
   font-family: MaisonBold;
   src: url(../fonts/MaisonNeueWEB-Bold.woff);
+}
+
+@font-face {
+  font-family: Lars;
+  src: url(../fonts/Lars.woff);
+}
+
+@font-face {
+  font-family: AG;
+  src: url(../fonts/AG.woff);
 }
