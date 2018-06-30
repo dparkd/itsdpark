@@ -159,7 +159,7 @@ h1:hover {
 .text-move {
   font-family: druk;
   font-size: 30px;
-  animation: moveSlideshow 70s linear infinite;
+  animation: moveSlideshow 45s linear infinite;
   position: fixed;
   bottom: 0px;
   width: 40000px;
@@ -174,7 +174,7 @@ h1:hover {
 }
 
 .move-right {
-  animation: moveSlideshowRight 70s linear infinite;
+  animation: moveSlideshowRight 45s linear infinite;
   left:-10000px;
   bottom: 80px;
 }
