@@ -238,3 +238,47 @@ h1:hover {
 #bibim-container img {
   width: 100%;
 }
+
+
+
+
+/*================================== Random shizz */
+#menu-bar {
+  animation: move 1s ease-in-out infinite;
+  width: 500px;
+  position: fixed;
+  z-index: -9999;
+}
+
+#window {
+  animation: rageshake 10s ease-in-out infinite;
+  width: 800px;
+  position: fixed;
+  left: 60%;
+  top: 0%;
+  z-index: -9999;
+}
+
+@keyframes rageshake {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(600px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
