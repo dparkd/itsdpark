@@ -179,6 +179,9 @@ h1:hover {
   bottom: 80px;
 }
 
+.eyyo {
+  bottom: 155px;
+}
 @keyframes moveSlideshow {
   100% {
     transform: translateX(-66.6666%);
