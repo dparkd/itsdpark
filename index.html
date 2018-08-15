@@ -28,6 +28,10 @@
       <h1 id="beats" class="bibim-box"><a href="https://open.spotify.com/artist/0ZZq3qJgGSeqjy6F9ILKAl?si=frX2_fxMSjmgZnJThCfTCA" target="_blank">Follow me at <i style="color:black;">bibimbeats</i></a></h1>
     </div>
 
+    <div class="box">
+      <h1 id="bibims" class="bibims-box"><a href="http://bibim.live" target="_blank">Currently building <i style="color:black;">bibim_</i></a></h1>
+    </div>
+
 
 
 
@@ -45,6 +49,10 @@
 
     <div id="bibim-container">
       <img src="./assets/images/bibimbeats.gif" alt="">
+    </div>
+
+    <div id="bibims-container">
+      <img src="./assets/images/cover.jpg" alt="">
     </div>
 
 
@@ -121,6 +129,16 @@
       })
       bibimContainer.addEventListener('mouseleave', function(e) {
         bibimText.style.opacity = '0';
+      })
+
+      // Bibims
+      var bibimsContainer = document.getElementById('bibims');
+      var bibimsText = document.getElementById('bibims-container');
+      bibimsContainer.addEventListener('mouseenter', function(e) {
+        bibimsText.style.opacity = '1';
+      })
+      bibimsContainer.addEventListener('mouseleave', function(e) {
+        bibimsText.style.opacity = '0';
       })
     </script>
   </body>
