@@ -10,54 +10,84 @@
 
 body {
 	font-family: lars, sans-serif;
-	padding-top: 75px;
+	padding-top: 150px;
 	font-weight: 100;
 }
 
 .container {
-	max-width: 1700px;
+	max-width: 1000px;
 }
 
 h1 {
-	font-size: 6em;
-	text-align: justify;
+	font-size: 4em;
+	text-align: center;
 	line-height: 2em;
 }
 
 
 a h2 {
 	font-size: 3em;
-	font-family: body, sans-serif;
-	text-align: justify;
+	font-family: lars, sans-serif;
+	text-align: center;
 	line-height: 2em;
 	color: black;
 }
 
+.space {
+	margin-bottom: 100px;
+}
 
 /*--------------*/
 
 .projects {
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 300px;
 	position: relative;
 }
 
-.project {
-	margin-top: 75px;
+br {
+	margin-top: 40px;
+	height:200px;
 }
 
+.project {
+	position: relative;
+}
+
+.project h2 {
+	line-height: 1;
+	color: rgba(0,0,0,0.8);
+	margin-bottom: 0;
+}
 
 .projects i {
 	color: rgb(0,0,0);
-	opacity: 0;
-	padding-left: 0px;
+	opacity: 0.3;
+	padding-left: 20px;
+	font-size: .7em;
+	text-align: center;
 	transition: 0.2s all ease-in-out;
 }
 
 .projects a:hover .project i {
-	opacity: 0.3;
-	padding-left: 10px;
+	opacity: 0.5;
+	padding-left: 30px;
 }
+
+.project img {
+	opacity: 0; 
+	position: absolute;
+	width: 100%;
+	transform: translateY(-50%);
+	z-index: -99;
+	pointer-events: none;
+	transition: 0.2s all ease-in-out;
+}
+
+.projects a:hover .project img {
+	opacity: 1;
+}
+
 
 .facebook {
 	background: url('../assets/images/facebook.jpg') center center;
@@ -66,6 +96,47 @@ a h2 {
 .thisalso {
 	background: url('../assets/images/reshape.jpg') center center;
 }
+
+
+/*--------------*/
+
+#white-bg {
+	position: fixed; 
+	width: 100%; height: 100%;
+	background: white;
+	opacity: 0;
+	transition: 0.2s all ease-in-out;
+	top: 0; 
+	z-index: 99;
+	pointer-events: none;
+}
+
+#image-container {
+	position: fixed; 
+	width: 100%; height: 100%; 
+	top: 0; 
+	opacity: 0;
+	z-index: 999;
+	pointer-events: none;
+	transition: 0.2s all ease-in-out;
+}
+
+#image-container img {
+	width: 30%;
+	position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
