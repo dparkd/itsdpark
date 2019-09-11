@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>bibim__</title>
+    <link rel="icon" href="./favicon.png">
+
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+    <div class="container title">
+      <h1 class="light">bibim___ </h1>
+      <p class="regular" style="font-size: 2em;"><i>noun</i> [bi.bim.___]</p>
+      <p class="regular"><sup>1</sup> to mix one thing with another, meshing of interests and passions</p>
+      <p class="regular"><sup>2</sup> a prefix to support daniel park's hobbies</p>
+    </div>
+
+    <br><br><br>
+
+
+    <div class="container hobbies">
+
+     <!--  <div class="row hover-bibim" id="hover-bibimfashiondesiiiigner" data-hover="bibimfashiondesiiiigner">
+        <a href="./bibimfashiondesiiiigner">
+          <div class="left column">
+            <h1 class="regular">bibimfashiondesiiiigner</h1>
+          </div>
+          <div class="right column">
+            <h1 class="light">2019</h1>
+          </div>
+        </a>
+      </div> -->
+
+      <div class="row hover-bibim" id="hover-bibimjewelry" data-hover="bibimjewelry">
+        <a href="./bibimjewelry">
+          <div class="left column">
+            <h1 class="regular">bibimjewelry</h1>
+          </div>
+          <div class="right column">
+            <h1 class="light">August 2018</h1>
+          </div>
+        </a>
+      </div>
+
+      <!-- <div class="row hover-bibim" id="hover-bibimshop" data-hover="bibimshop">
+        <a href="./bibimshop/">
+          <div class="left column">
+            <h1 class="regular">bibimhypefeast</h1>
+          </div>
+          <div class="right column">
+            <h1 class="light">August 2018</h1>
+          </div>
+        </a>
+      </div> -->
+
+      <div class="row hover-bibim" id="hover-bibimbrand" data-hover="bibimbrand">
+        <a href="./bibimbrands/">
+          <div class="left column">
+            <h1 class="regular">bibimbranding</h1>
+          </div>
+          <div class="right column">
+            <h1 class="light">August 2018</h1>
+          </div>
+        </a>
+      </div>
+
+      <div class="row hover-bibim" id="hover-bibimbeats" data-hover="bibimbeats">
+        <a href="https://open.spotify.com/artist/0ZZq3qJgGSeqjy6F9ILKAl" target="_blank">
+          <div class="left column">
+            <h1 class="regular">bibimbeats</h1>
+          </div>
+          <div class="right column">
+            <h1 class="light">2017-2018</h1>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="row hover-bibim" id="hover-poster" data-hover="bibimposter">
+        <a href="./bibimposters/" >
+          <div class="left column">
+            <h1 class="regular">bibimposters</h1>
+          </div>
+          <div class="right column">
+            <h1 class="light">2016</h1>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="backgrounds">
+      <div id="bibimfashiondesiiiigner" class="bibim-items">
+        <img src="./bibimfashiondesiiiigner/images/molla.png" alt="">
+      </div>
+
+      <div id="bibimjewelry" class="bibim-items">
+        <img src="./bibimjewelry/images/bg.jpg" alt="">
+      </div>
+
+      <div id="bibimbrand" class="bibim-items">
+        <img src="./bibimbrands/images/bibimbook.jpg" alt="">
+      </div>
+
+      <div id="bibimshop" class="bibim-items">
+        <img src="./images/cover.jpg" alt="">
+      </div>
+
+      <div id="bibimbeats" class="bibim-items">
+        <img src="./images/bibimbeats.gif" alt="">
+      </div>
+
+      <div id="bibimposter" class="bibim-items">
+        <img src="./bibimposters/images/empirestate.jpg" alt="">
+      </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+      var hoverClassItems = document.querySelectorAll('.hover-bibim');
+
+      [].forEach.call(hoverClassItems, function(item) {
+        item.addEventListener('mouseover', function() {
+          document.getElementById(item.dataset.hover).style.left = Math.floor(Math.random() * (0 - 70 + 1)) + 70 + "%";
+          document.getElementById(item.dataset.hover).style.top = Math.floor(Math.random() * (0 - 25 + 1)) + 25 + "%";
+          document.getElementById(item.dataset.hover).style.opacity = 1;
+        })
+
+        item.addEventListener('mouseleave', function() {
+          document.getElementById(item.dataset.hover).style.opacity = 0;
+        })
+      })
+
+
+      // hoverClassItems.forEach(function() {
+
+      //   console.log(this);
+        
+      //   this.addEventListener('mouseover', function() {
+      //     var xCord = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      //     var yCord = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+
+      //     console.log(this);
+
+      //     imageItems.item(i).style.left = xCord + "%";
+      //     imageItems.item(i).style.top = yCord + "%";
+      //     imageItems.item(i).style.opacity = 1;
+      //   })
+      // });
+
+      // for (i = 0; i < hoverClassItems.length; i++) {
+
+
+      //   hoverClassItems.item(i).addEventListener('mouseover', function() {
+      //     var xCord = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      //     var yCord = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+
+      //     imageItems.item(i).style.left = xCord + "%";
+      //     imageItems.item(i).style.top = yCord + "%";
+      //     imageItems.item(i).style.opacity = 1;
+      //   })
+
+      //   hoverClassItems.item(i).addEventListener('mouseleave', function() {
+      //     imageItems.item(i).style.opacity = 0;
+      //   })
+      // }
+
+      // var randposterx = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      // var randpostery = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+      // document.getElementById('hover-poster').addEventListener('mouseover', function() {
+      //   document.getElementById('poster').style.left =  randposterx + "%";
+      //   document.getElementById('poster').style.top =  randpostery + "%";
+      //   document.getElementById('poster').style.opacity = 1;
+      // });
+      // document.getElementById('hover-poster').addEventListener('mouseleave', function() {
+      //   document.getElementById('poster').style.opacity = 0;
+      // });
+
+      // var bibimx = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      // var bibimy = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+      // document.getElementById('hover-bibimbeats').addEventListener('mouseover', function() {
+      //   document.getElementById('bibimbeats').style.left =  bibimx + "%";
+      //   document.getElementById('bibimbeats').style.top =  bibimy + "%";
+      //   document.getElementById('bibimbeats').style.opacity = 1;
+      // });
+      // document.getElementById('hover-bibimbeats').addEventListener('mouseleave', function() {
+      //   document.getElementById('bibimbeats').style.opacity = 0;
+      // });
+
+      // var bibimsx = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      // var bibimsy = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+      // document.getElementById('hover-bibimshop').addEventListener('mouseover', function() {
+      //   document.getElementById('bibimshop').style.left =  bibimsx + "%";
+      //   document.getElementById('bibimshop').style.top =  bibimsy + "%";
+      //   document.getElementById('bibimshop').style.opacity = 1;
+      // });
+      // document.getElementById('hover-bibimshop').addEventListener('mouseleave', function() {
+      //   document.getElementById('bibimshop').style.opacity = 0;
+      // });
+
+      // var bibimbrandx = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      // var bibimbrandy = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+      // document.getElementById('hover-bibimbrand').addEventListener('mouseover', function() {
+      //   document.getElementById('bibimbrand').style.left =  bibimbrandx + "%";
+      //   document.getElementById('bibimbrand').style.top =  bibimbrandy + "%";
+      //   document.getElementById('bibimbrand').style.opacity = 1;
+      // });
+      // document.getElementById('hover-bibimbrand').addEventListener('mouseleave', function() {
+      //   document.getElementById('bibimbrand').style.opacity = 0;
+      // });
+
+      // var bibimjewelryx = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      // var bibimjewelryy = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+      // document.getElementById('hover-bibimjewelry').addEventListener('mouseover', function() {
+      //   document.getElementById('bibimjewelry').style.left =  bibimjewelryx + "%";
+      //   document.getElementById('bibimjewelry').style.top =  bibimjewelryy + "%";
+      //   document.getElementById('bibimjewelry').style.opacity = 1;
+      // });
+      // document.getElementById('hover-bibimjewelry').addEventListener('mouseleave', function() {
+      //   document.getElementById('bibimjewelry').style.opacity = 0;
+      // });
+
+      // var bibimfacex = Math.floor(Math.random() * (0 - 70 + 1)) + 70;
+      // var bibimfacey = Math.floor(Math.random() * (0 - 25 + 1)) + 25;
+      // document.getElementById('hover-bibimface').addEventListener('mouseover', function() {
+      //   document.getElementById('bibimface').style.left =  bibimfacex + "%";
+      //   document.getElementById('bibimface').style.top =  bibimfacey + "%";
+      //   document.getElementById('bibimface').style.opacity = 1;
+      // });
+      // document.getElementById('hover-bibimface').addEventListener('mouseleave', function() {
+      //   document.getElementById('bibimface').style.opacity = 0;
+      // });
+
+
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <i class="light" style="font-size: 90px;">[bih-bim]</i> -->
