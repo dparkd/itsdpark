@@ -64,6 +64,7 @@ br {
 	color: rgb(0,0,0);
 	opacity: 0.3;
 	padding-left: 20px;
+	letter-spacing: 0.3px;
 	font-size: .7em;
 	text-align: center;
 	transition: 0.2s all ease-in-out;
@@ -84,7 +85,21 @@ br {
 	transition: 0.2s all ease-in-out;
 }
 
+.project video {
+	opacity: 0; 
+	position: absolute;
+	width: 100%;
+	transform: translateY(-50%);
+	z-index: -99;
+	pointer-events: none;
+	transition: 0.2s all ease-in-out;
+}
+
 .projects a:hover .project img {
+	opacity: 1;
+}
+
+.projects a:hover .project video {
 	opacity: 1;
 }
 
