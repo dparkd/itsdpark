@@ -1,0 +1,24 @@
+@font-face {
+  font-family: space-regular;
+  src: url(./assets/space/spaceregular.ttf);
+}
+
+@font-face {
+  font-family: space-bold;
+  src: url(./assets/space/spacebold.ttf);
+}
+
+@font-face {
+  font-family: space-medium;
+  src: url(./assets/space/spacemedium.ttf);
+}
+
+@font-face {
+  font-family: space-semi;
+  src: url(./assets/space/spacesemi.ttf);
+}
+
+@font-face {
+  font-family: space-light;
+  src: url(./assets/space/spacelight.ttf);
+}

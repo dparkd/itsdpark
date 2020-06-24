@@ -1,0 +1,144 @@
+@font-face {
+  font-family: regular;
+  src: url(../regular.otf);
+}
+
+@font-face {
+  font-family: light;
+  src: url(../light.otf);
+}
+
+
+
+
+body {
+  background: #ffffff;
+  margin: 0;
+}
+
+
+.main-container {
+  width: 60%;
+  margin: 0 auto;
+  background: white;
+}
+
+
+.nav {
+  padding: 50px 50px;
+  text-align: center;
+}
+
+.nav h1 {
+  font-size: 24px;
+  padding-bottom: 20px;
+  margin: 0;
+  font-family: light;
+}
+
+.nav p {
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-family: light;
+  color: black;
+  opacity: 0.7;
+}
+
+
+.img {
+  display: inline-block;
+  margin-bottom: -4px;
+}
+.img img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+
+/* product container */
+
+
+.product-container {
+  width: 100%;
+  background: white;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 150px;
+}
+
+.product-container .img-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.left {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  text-align: right;
+}
+
+.right {
+  width: 50%;
+  display: inline-block;
+}
+
+
+.img-container a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.img-container .half {
+  width: 40%;
+  display: inline-block;
+  float: right;
+}
+
+.img-container .half-l {
+  width: 43%;
+  display: inline-block;
+  float: left;
+}
+
+.img-container .hover-layer {
+  background: rgba(255, 255, 255, 0);
+  position: absolute;
+  padding: 20px;
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+  transition: 0.2s ease all;
+}
+
+.img-container a:hover .hover-layer {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.img-container a:hover .hover-layer p {
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  letter-spacing: 1px;
+}
+
+.img-container .hover-layer p{
+  font-size: 12px;
+  font-family: light;
+  color: #333;
+  opacity: 0;
+}
+
+.img-container img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .left, .right, .img-container .half, .img-container img {
+    width: 100%;
+  }
+}

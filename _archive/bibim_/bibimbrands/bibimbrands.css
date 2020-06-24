@@ -1,0 +1,53 @@
+@font-face {
+  font-family: regular;
+  src: url(../regular.otf);
+}
+
+@font-face {
+  font-family: light;
+  src: url(../light.otf);
+}
+
+
+body {
+  background: #ffffff;
+  margin: 0;
+}
+
+
+.main-container {
+  margin: 0;
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+}
+
+
+.nav {
+  padding: 50px 50px;
+  text-align: center;
+}
+
+.nav h1 {
+  font-size: 20px;
+  margin: 0;
+  font-family: light;
+}
+
+.nav p {
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-family: light;
+  color: #c0c0c0;
+}
+
+
+.img {
+  display: inline-block;
+  margin-bottom: 100px;
+}
+.img img {
+  width: 100%;
+  margin-bottom: -4px;
+}
