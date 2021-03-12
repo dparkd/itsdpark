@@ -1,6 +1,7 @@
 body {
-  font-family: space-regular;
+  font-family: 'arial', sans-serif;
   line-height: 0;
+  color: #3f3f3f;
 }
 
 a, a:visited, a:hover {
@@ -12,12 +13,20 @@ p {
 }
 
 .container {
-  padding-top: 200px;
-  max-width: 1000px;
+  padding-top: 00px;
+  max-width: 100%;
+  width: 100%;
+  padding: 15px;
 }
 
 h1 {
-  line-height: 2em;
+  font-size: 20px;
+  font-weight: light;
+  letter-spacing: .2px;
+}
+
+.project h1 {
+  padding-top: 50px;
 }
 
 .projects {
@@ -35,11 +44,17 @@ h1 {
 
 .project img {
   width: 100%;
+  padding-top: 15px;
+}
+
+.project video {
+  padding-top: 15px;
+  width: 100%;
 }
 
 .project:hover {
-  transform: translateY(-10px);
-  opacity: 0.80;
+  /* transform: translateY(-10px); */
+  /* opacity: 0.80; */
 }
 
 .project a {
